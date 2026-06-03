@@ -1,0 +1,16 @@
+version: 1.1.5
+
+cache: true
+
+endpoints:
+  custom:
+    - name: "OpenRouter"
+      apiKey: "${OPENROUTER_KEY}"
+      baseURL: "https://openrouter.ai"
+      models:
+        default: ["meta-llama/llama-3-70b-instruct", "openai/gpt-4o-mini", "anthropic/claude-3.5-sonnet"]
+        fetch: true
+      titleConvo: true
+      titleModel: "meta-llama/llama-3-70b-instruct"
+      summarize: false
+      detectTokenInbalance: true
